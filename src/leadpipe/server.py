@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import sys
 
-from . import __version__, errors
+from . import errors
 from .config import Config
 from .tools import ToolContext, dispatch
 

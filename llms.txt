@@ -1,0 +1,33 @@
+# LeadPipe MCP
+
+> LeadPipe MCP is an MCP server that gives small businesses without a CRM a scored, bookable lead pipeline on Google Sheets and Calendar, with dedup, stage validation and approval-safe writes. By TechAurah.
+
+Key facts:
+
+- License: MIT. Runtime: Python 3.11+, official MCP SDK, stdio transport.
+- It is not a CRM and sends nothing to anyone: no messages, no calendar invites.
+- Write modes: direct, dry-run, approval. Approval is the default with real credentials.
+- Demo mode runs the full walkthrough offline with a fake client and 12 seed leads.
+
+## Documentation
+
+- [README](https://github.com/techaurah/leadpipe-mcp): Full overview, quickstart, comparison and FAQ
+- [Schema](https://github.com/techaurah/leadpipe-mcp/blob/main/docs/schema.md): The three-tab Sheet schema (Leads, AuditLog, Meta), the scoring model and the stage transition map
+- [Safety model](https://github.com/techaurah/leadpipe-mcp/blob/main/docs/safety.md): Write modes, the approval flow and booking guardrails
+- [Client config](https://github.com/techaurah/leadpipe-mcp/blob/main/docs/client-config.md): Claude Desktop and Cursor registration for demo and real mode
+
+## Examples
+
+- [Demo walkthrough](https://github.com/techaurah/leadpipe-mcp/blob/main/examples/demo_walkthrough.py): All eight tools end to end on the fake client, runnable with zero credentials
+- [Examples index](https://github.com/techaurah/leadpipe-mcp/blob/main/examples/README.md): What each example shows and what it needs
+
+## Use it
+
+- [Install from source](https://github.com/techaurah/leadpipe-mcp): Clone the repo, run pip install -e . and follow the README quickstart
+- [Releases](https://github.com/techaurah/leadpipe-mcp/releases): Version history and downloads
+
+## Optional
+
+- [Contributing](https://github.com/techaurah/leadpipe-mcp/blob/main/CONTRIBUTING.md): How to contribute
+- [TechAurah profile](https://github.com/techaurah): The other five open-source projects
+- [TechAurah website](https://techaurah.com): The company behind the project

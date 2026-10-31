@@ -52,7 +52,7 @@ def create_server(config: Config):
         ) from None
 
     ctx = build_context(config)
-    server = FastMCP("leadpipe", version=__version__)
+    server = FastMCP("leadpipe")
 
     @server.tool()
     def capture_lead(

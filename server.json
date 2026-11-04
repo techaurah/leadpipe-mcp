@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.techaurah/leadpipe-mcp",
+  "description": "An MCP server that gives AI assistants a safe lead pipeline (dedup, scoring, stages, booking) over a Google Sheet, for small businesses with no CRM.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/techaurah/leadpipe-mcp",
+    "id": "techaurah/leadpipe-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "leadpipe-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {"name": "LEADPIPE_DEMO", "description": "Set to 1 for the zero-credential demo mode with seeded data.", "isRequired": false, "default": "0"},
+        {"name": "LEADPIPE_SHEET_ID", "description": "Google Sheet ID holding the pipeline; required outside demo mode.", "isRequired": false},
+        {"name": "LEADPIPE_CALENDAR_ID", "description": "Calendar to check and book against; use primary or a calendar ID.", "isRequired": false, "default": "primary"},
+        {"name": "LEADPIPE_WRITE_MODE", "description": "Write safety mode: direct, dry_run, or approval.", "isRequired": false, "default": "approval"}
+      ]
+    }
+  ]
+}

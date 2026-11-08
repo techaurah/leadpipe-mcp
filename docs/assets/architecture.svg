@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="790" viewBox="0 0 1240 790" role="img" aria-label="LeadPipe MCP architecture: MCP client, server entry, tools layer, pure core logic, and a store interface with Google and in-memory backends">
+<rect width="1240" height="790" rx="18" fill="#0B1F3A"/>
+<text x="48" y="50" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">LeadPipe architecture</text>
+<text x="48" y="78" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">Thin tool wrappers over pure logic, behind one store interface with two backends.</text>
+<rect x="48" y="96" width="1144" height="78" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="126" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#00CEFF">MCP CLIENT</text>
+<text x="70" y="154" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Claude, Cursor or a custom agent. It calls tools; it never touches the Sheet directly.</text>
+<line x1="620" y1="174" x2="620" y2="192" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="614,192 626,192 620,202" fill="#00CEFF"/>
+<text x="636" y="191.0" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#00CEFF">MCP over stdio</text>
+<rect x="48" y="200" width="1144" height="78" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="230" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#00CEFF">SERVER ENTRY · src/leadpipe/server.py</text>
+<text x="70" y="258" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">FastMCP entry with a lazy SDK import. create_server() wires the eight tools; build_context() loads config.</text>
+<line x1="620" y1="278" x2="620" y2="296" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="614,296 626,296 620,306" fill="#00CEFF"/>
+<rect x="48" y="304" width="1144" height="126" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="334" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#00CEFF">TOOLS · src/leadpipe/tools/ · one module per tool group, wrappers stay thin</text>
+<rect x="70" y="346" width="208" height="40" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="82" y="370" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">capture.py</text>
+<rect x="294" y="346" width="208" height="40" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="306" y="370" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">leads.py</text>
+<rect x="518" y="346" width="208" height="40" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="530" y="370" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">scoring.py</text>
+<rect x="742" y="346" width="208" height="40" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="754" y="370" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">stages.py</text>
+<rect x="966" y="346" width="208" height="40" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="978" y="370" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">calendar_tools.py</text>
+<text x="70" y="412" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#9DB8D2">__init__.py holds the tool context, write-mode enforcement (dry-run, approval, live), the audit helper and the dispatch registry.</text>
+<line x1="620" y1="430" x2="620" y2="448" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="614,448 626,448 620,458" fill="#00CEFF"/>
+<rect x="48" y="456" width="1144" height="158" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="486" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#00CEFF">CORE LOGIC · pure functions, no I/O, fully unit-tested</text>
+<rect x="70" y="496" width="360" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="82" y="520" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">scoring.py</text>
+<text x="82" y="539" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">0 to 100 score, server-side only</text>
+<rect x="446" y="496" width="360" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="458" y="520" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">stages.py</text>
+<text x="458" y="539" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">transition map, never backwards</text>
+<rect x="822" y="496" width="360" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="834" y="520" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">models.py</text>
+<text x="834" y="539" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">lead and appointment types</text>
+<rect x="70" y="556" width="360" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="82" y="580" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">errors.py</text>
+<text x="82" y="599" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">closed error-code set</text>
+<rect x="446" y="556" width="360" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="458" y="580" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">config.py</text>
+<text x="458" y="599" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">env and write mode</text>
+<rect x="822" y="556" width="360" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="834" y="580" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">demo_data.py</text>
+<text x="834" y="599" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">the 12-lead demo seed</text>
+<line x1="620" y1="614" x2="620" y2="632" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="614,632 626,632 620,642" fill="#00CEFF"/>
+<rect x="48" y="640" width="1144" height="126" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="670" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#00CEFF">STORE · src/leadpipe/store/ · base.py defines the protocols every backend implements</text>
+<rect x="70" y="680" width="540" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="82" y="704" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">store/sheets.py</text>
+<text x="82" y="723" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Google Sheets pipeline + Google Calendar bookings, via a service account</text>
+<rect x="634" y="680" width="540" height="52" rx="8" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="646" y="704" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" font-weight="700" fill="#EAF6FF">store/fake.py</text>
+<text x="646" y="723" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">In-memory backend: powers the zero-credential demo and every test</text>
+<text x="70" y="750" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#9DB8D2">store/schema.py defines the Sheet headers and bootstrap; a Sheet whose headers do not match is refused, never rewritten.</text>
+</svg>

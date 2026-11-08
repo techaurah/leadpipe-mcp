@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="356" viewBox="0 0 1240 356" role="img" aria-label="LeadPipe lead lifecycle: capture, score, stage, check availability, book, summarise">
+<rect width="1240" height="356" rx="18" fill="#0B1F3A"/>
+<text x="48" y="50" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">The lead lifecycle</text>
+<text x="48" y="78" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">What the demo walks through, and what a real day in the pipeline looks like.</text>
+<rect x="48" y="104" width="182" height="168" rx="10" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="62" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">STEP 1</text>
+<text x="62" y="156" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#EAF6FF">capture_lead</text>
+<text x="62" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Enquiry recorded.</text>
+<text x="62" y="201" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Deduped on normalised</text>
+<text x="62" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">email, then phone,</text>
+<text x="62" y="239" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">before any write.</text>
+<line x1="231" y1="188" x2="241" y2="188" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="241,182 249,188 241,194" fill="#00CEFF"/>
+<rect x="242" y="104" width="182" height="168" rx="10" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="256" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">STEP 2</text>
+<text x="256" y="156" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#EAF6FF">score_lead</text>
+<text x="256" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Deterministic 0 to 100,</text>
+<text x="256" y="201" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">computed server-side.</text>
+<text x="256" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">HOT starts at 80.</text>
+<line x1="425" y1="188" x2="435" y2="188" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="435,182 443,188 435,194" fill="#00CEFF"/>
+<rect x="436" y="104" width="182" height="168" rx="10" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="450" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">STEP 3</text>
+<text x="450" y="156" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#EAF6FF">update_stage</text>
+<text x="450" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Moves only along the</text>
+<text x="450" y="201" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">validated stage map.</text>
+<text x="450" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Never backwards.</text>
+<line x1="619" y1="188" x2="629" y2="188" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="629,182 637,188 629,194" fill="#00CEFF"/>
+<rect x="630" y="104" width="182" height="168" rx="10" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="644" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">STEP 4</text>
+<text x="644" y="156" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#EAF6FF">check_availability</text>
+<text x="644" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Free slots inside</text>
+<text x="644" y="201" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">business hours. Busy</text>
+<text x="644" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">titles are never</text>
+<text x="644" y="239" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">returned.</text>
+<line x1="813" y1="188" x2="823" y2="188" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="823,182 831,188 823,194" fill="#00CEFF"/>
+<rect x="824" y="104" width="182" height="168" rx="10" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="838" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">STEP 5</text>
+<text x="838" y="156" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#EAF6FF">book_appointment</text>
+<text x="838" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">Availability re-checked</text>
+<text x="838" y="201" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">at call time; an</text>
+<text x="838" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">idempotency key stops</text>
+<text x="838" y="239" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">double-booking.</text>
+<line x1="1007" y1="188" x2="1017" y2="188" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="1017,182 1025,188 1017,194" fill="#00CEFF"/>
+<rect x="1018" y="104" width="182" height="168" rx="10" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="1032" y="132" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">STEP 6</text>
+<text x="1032" y="156" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="11.5" font-weight="700" fill="#EAF6FF">daily_pipeline_summary</text>
+<text x="1032" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">The day read back: new,</text>
+<text x="1032" y="201" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">hot, booked and stuck</text>
+<text x="1032" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9DB8D2">leads.</text>
+<rect x="48" y="292" width="1144" height="36" rx="8" fill="#08304D" stroke="#00CEFF"/>
+<text x="620" y="315" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" font-weight="700" fill="#00CEFF" text-anchor="middle">Not hot yet? The lead stays in the pipeline and moves through follow-up stages instead of being dropped.</text>
+</svg>

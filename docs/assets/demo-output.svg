@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="602" viewBox="0 0 880 602" role="img" aria-label="Real output from the LeadPipe demo walkthrough: a lead is captured, deduplicated on the second capture, scored 85 with band HOT, booked, and re-booked idempotently with no duplicate.">
+<rect x="0" y="0" width="880" height="602" rx="12" fill="#0B1F3A"/>
+<circle cx="30" cy="26" r="6" fill="#FF5F57" opacity="0.85"/>
+<circle cx="50" cy="26" r="6" fill="#FEBC2E" opacity="0.85"/>
+<circle cx="70" cy="26" r="6" fill="#28C840" opacity="0.85"/>
+<text x="92" y="31" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12.5" fill="#9DB8D2">examples/demo_walkthrough.py</text>
+<text x="32" y="66" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#EAF6FF">Real demo output</text>
+<text x="32" y="90" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#9DB8D2">examples/demo_walkthrough.py, zero credentials, output trimmed</text>
+<line x1="32" y1="102" x2="848" y2="102" stroke="#00CEFF" stroke-opacity="0.35" stroke-width="1"/>
+<text x="32" y="118" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#00CEFF" font-weight="700">== 1. capture_lead (new lead) ==</tspan></text>
+<text x="32" y="143" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "created": true,</tspan></text>
+<text x="32" y="168" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "deduped": false,</tspan></text>
+<text x="32" y="193" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#9DB8D2" font-weight="400">...</tspan></text>
+<text x="32" y="218" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#00CEFF" font-weight="700">== 2. capture_lead again (same contact, deduped) ==</tspan></text>
+<text x="32" y="243" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "created": false,</tspan></text>
+<text x="32" y="268" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "deduped": true,</tspan></text>
+<text x="32" y="293" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#9DB8D2" font-weight="400">...</tspan></text>
+<text x="32" y="318" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#00CEFF" font-weight="700">== 3. score_lead (total computed server-side) ==</tspan></text>
+<text x="32" y="343" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "score_total": </tspan><tspan fill="#00CEFF" font-weight="700">85</tspan><tspan fill="#EAF6FF" font-weight="400">,</tspan></text>
+<text x="32" y="368" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "band": </tspan><tspan fill="#00CEFF" font-weight="700">"HOT"</tspan><tspan fill="#EAF6FF" font-weight="400">,</tspan></text>
+<text x="32" y="393" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#9DB8D2" font-weight="400">...</tspan></text>
+<text x="32" y="418" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#00CEFF" font-weight="700">== 7. book_appointment with confirm=true ==</tspan></text>
+<text x="32" y="443" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "appointment_id": "fake-event-0007",</tspan></text>
+<text x="32" y="468" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "created": true,</tspan></text>
+<text x="32" y="493" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#9DB8D2" font-weight="400">...</tspan></text>
+<text x="32" y="518" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#00CEFF" font-weight="700">== 8. book_appointment again (idempotent, no duplicate) ==</tspan></text>
+<text x="32" y="543" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "appointment_id": "fake-event-0007",</tspan></text>
+<text x="32" y="568" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14.5" xml:space="preserve"><tspan fill="#EAF6FF" font-weight="400">  "created": false,</tspan></text>
+</svg>

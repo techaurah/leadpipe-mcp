@@ -1,0 +1,46 @@
+leadpipe-mcp/
+|-- README.md                  Project overview, quickstart, FAQ
+|-- AGENTS.md                  Working rules for AI coding agents in this repo
+|-- CHANGELOG.md               Release history
+|-- ROADMAP.md                 Planned work, labelled as planned
+|-- CONTRIBUTING.md            How to contribute
+|-- SECURITY.md                How to report a vulnerability
+|-- CODE_OF_CONDUCT.md         Community standards
+|-- LICENSE                    MIT
+|-- Dockerfile                 Container build
+|-- pyproject.toml             Package metadata, dependencies, tool config
+|-- server.json                MCP registry listing
+|-- glama.json                 Glama directory listing
+|-- llms.txt / llms-full.txt   Machine-readable project summary for AI assistants
+|-- .env.example               Every environment variable, documented
+|-- docs/
+|   |-- schema.md              Sheet schema and the scoring model
+|   |-- safety.md              The safety model and write modes
+|   |-- client-config.md       Real Google mode setup, step by step
+|   `-- assets/                README visuals (diagrams, demo output, this tree)
+|-- examples/
+|   |-- README.md              How to run the demo
+|   `-- demo_walkthrough.py    Zero-credential end-to-end walkthrough
+|-- src/leadpipe/
+|   |-- server.py              FastMCP entry point; wires the eight tools
+|   |-- config.py              Environment and write-mode configuration
+|   |-- models.py              Lead and appointment types
+|   |-- errors.py              The closed error-code set
+|   |-- scoring.py             Deterministic 0 to 100 scoring (pure)
+|   |-- stages.py              Stage transition map (pure)
+|   |-- demo_data.py           The 12-lead demo seed
+|   |-- bootstrap.py           Sheet bootstrap command
+|   |-- tools/                 One module per tool group; thin wrappers
+|   |   |-- __init__.py        Tool context, write-mode guard, dispatch registry
+|   |   |-- capture.py         capture_lead
+|   |   |-- leads.py           get_lead, list_hot_leads
+|   |   |-- scoring.py         score_lead
+|   |   |-- stages.py          update_stage
+|   |   `-- calendar_tools.py  check_availability, book_appointment, daily_pipeline_summary
+|   `-- store/                 One interface, two backends
+|       |-- base.py            Store protocols
+|       |-- sheets.py          Google Sheets and Calendar backend
+|       |-- fake.py            In-memory backend (demo and tests)
+|       `-- schema.py          Sheet headers and bootstrap checks
+|-- tests/                     93 automated tests, all against the fake store
+`-- .github/workflows/ci.yml   CI: tests, lint, type check on Python 3.11 and 3.12

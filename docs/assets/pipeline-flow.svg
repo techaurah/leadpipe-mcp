@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="430" viewBox="0 0 1280 430" role="img" aria-label="How LeadPipe MCP works: an AI assistant calls eight guardrailed tools that run a lead pipeline on Google Sheets and Calendar">
+<rect width="1280" height="430" rx="18" fill="#0B1F3A"/>
+<text x="48" y="52" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">How LeadPipe works</text>
+<text x="48" y="80" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">One MCP server between your AI assistant and the tools your business already owns.</text>
+<rect x="48" y="120" width="215" height="190" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="158" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#EAF6FF">AI ASSISTANT</text>
+<text x="70" y="188" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">Claude, Cursor or any</text>
+<text x="70" y="212" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">MCP client. It asks in</text>
+<text x="70" y="236" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">plain language:</text>
+<text x="70" y="260" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">&quot;Score this lead and</text>
+<text x="70" y="284" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">book the hot ones.&quot;</text>
+<line x1="263" y1="215" x2="320" y2="215" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="320,209 332,215 320,221" fill="#00CEFF"/>
+<text x="296.5" y="203" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF" text-anchor="middle">MCP</text>
+<rect x="330" y="105" width="560" height="240" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="354" y="143" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#00CEFF">LEADPIPE MCP · 8 TOOLS</text>
+<rect x="354" y="163" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="366" y="182" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">capture_lead</text>
+<rect x="616" y="163" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="628" y="182" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">get_lead</text>
+<rect x="354" y="199" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="366" y="218" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">score_lead</text>
+<rect x="616" y="199" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="628" y="218" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">list_hot_leads</text>
+<rect x="354" y="235" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="366" y="254" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">update_stage</text>
+<rect x="616" y="235" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="628" y="254" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">check_availability</text>
+<rect x="354" y="271" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="366" y="290" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">book_appointment</text>
+<rect x="616" y="271" width="248" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="628" y="290" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13.5" fill="#EAF6FF">daily_pipeline_summary</text>
+<rect x="354" y="315" width="512" height="30" rx="7" fill="#08304D" stroke="#00CEFF"/>
+<text x="610.0" y="335" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" font-weight="700" fill="#00CEFF" text-anchor="middle">Guardrails: dedup on capture · no stage backwards · no double-booking</text>
+<line x1="890" y1="215" x2="942" y2="215" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="942,209 954,215 942,221" fill="#00CEFF"/>
+<text x="921.0" y="203" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF" text-anchor="middle">writes</text>
+<rect x="952" y="112" width="280" height="100" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="974" y="150" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#00CEFF">GOOGLE SHEETS</text>
+<text x="974" y="180" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">The pipeline lives in a sheet</text>
+<text x="974" y="204" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">the business already owns.</text>
+<rect x="952" y="226" width="280" height="100" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="974" y="264" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#00CEFF">GOOGLE CALENDAR</text>
+<text x="974" y="294" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">Availability checks and</text>
+<text x="974" y="318" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">bookings, with no overlap.</text>
+<text x="48" y="402" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Demo mode runs the same pipeline on an in-memory store, zero credentials, so anyone can try it in five minutes.</text>
+</svg>

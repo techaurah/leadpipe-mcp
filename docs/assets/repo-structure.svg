@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="438" viewBox="0 0 1180 438" role="img" aria-label="LeadPipe MCP repository structure">
+<rect width="1180" height="438" rx="18" fill="#0B1F3A"/>
+<text x="44" y="50" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#EAF6FF">Repository structure</text>
+<text x="44" y="86" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="700" fill="#00CEFF">leadpipe-mcp/</text>
+<text x="44" y="116" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ src/leadpipe/</text>
+<text x="232" y="116" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">the server package</text>
+<text x="44" y="146" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ server.py</text>
+<text x="232" y="146" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">MCP entry point, wires the 8 tools</text>
+<text x="44" y="176" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ scoring.py</text>
+<text x="242" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">0 to 100 lead score and hot / warm bands</text>
+<text x="44" y="206" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ stages.py</text>
+<text x="232" y="206" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">stage rules: leads never move backwards</text>
+<text x="44" y="236" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ store/</text>
+<text x="201" y="236" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">Google Sheets and Calendar, plus the demo store</text>
+<text x="44" y="266" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   └─ tools/</text>
+<text x="201" y="266" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">capture, leads, scoring, stages, calendar tools</text>
+<text x="44" y="296" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ tests/</text>
+<text x="161" y="296" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">93 automated tests, including the demo walkthrough</text>
+<text x="44" y="326" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ examples/</text>
+<text x="191" y="326" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">zero-credential demo on a 12-lead seed</text>
+<text x="44" y="356" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ docs/</text>
+<text x="151" y="356" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">schema, safety model and client config</text>
+<text x="44" y="386" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">└─ server.json · glama.json</text>
+<text x="343" y="386" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">MCP directory listings (M8ven, Glama)</text>
+</svg>

@@ -1,0 +1,175 @@
+{
+  "l1": {
+    "boundary_cases_checked": 8,
+    "calls": 10000,
+    "timing": {
+      "mean_ms": 0.006,
+      "ops": 10000,
+      "ops_per_sec": 181296.2,
+      "p95_ms": 0.013,
+      "seconds": 0.0552
+    }
+  },
+  "l2": {
+    "audit_entries": 1000,
+    "next_lead_seq": "1001",
+    "results_ok_created": 1000,
+    "rows": 1000,
+    "sequential_ids": true,
+    "timing": {
+      "mean_ms": 0.351,
+      "ops": 1000,
+      "ops_per_sec": 2847.5,
+      "p95_ms": 0.535,
+      "seconds": 0.3512
+    },
+    "unique_ids": 1000
+  },
+  "l3_0": {
+    "dup_created": 0,
+    "dup_deduped": 200,
+    "dup_timing": {
+      "mean_ms": 0.1,
+      "ops": 200,
+      "ops_per_sec": 10007.3,
+      "p95_ms": 0.124,
+      "seconds": 0.02
+    },
+    "fresh_created": 200,
+    "fresh_ok": 200,
+    "fresh_timing": {
+      "mean_ms": 0.076,
+      "ops": 200,
+      "ops_per_sec": 13141.2,
+      "p95_ms": 0.117,
+      "seconds": 0.0152
+    },
+    "preload": 0,
+    "rows_final": 200
+  },
+  "l3_1000": {
+    "dup_created": 0,
+    "dup_deduped": 200,
+    "dup_timing": {
+      "mean_ms": 0.583,
+      "ops": 200,
+      "ops_per_sec": 1716.1,
+      "p95_ms": 0.673,
+      "seconds": 0.1165
+    },
+    "fresh_created": 200,
+    "fresh_ok": 200,
+    "fresh_timing": {
+      "mean_ms": 0.547,
+      "ops": 200,
+      "ops_per_sec": 1829.8,
+      "p95_ms": 0.627,
+      "seconds": 0.1093
+    },
+    "preload": 1000,
+    "rows_final": 1200
+  },
+  "l3_10000": {
+    "dup_created": 0,
+    "dup_deduped": 200,
+    "dup_timing": {
+      "mean_ms": 5.398,
+      "ops": 200,
+      "ops_per_sec": 185.3,
+      "p95_ms": 6.16,
+      "seconds": 1.0795
+    },
+    "fresh_created": 200,
+    "fresh_ok": 200,
+    "fresh_timing": {
+      "mean_ms": 5.768,
+      "ops": 200,
+      "ops_per_sec": 173.4,
+      "p95_ms": 7.012,
+      "seconds": 1.1537
+    },
+    "preload": 10000,
+    "rows_final": 10200
+  },
+  "l4": {
+    "mismatches": [],
+    "score_timing": {
+      "mean_ms": 5.521,
+      "ops": 1000,
+      "ops_per_sec": 181.1,
+      "p95_ms": 8.176,
+      "seconds": 5.5211
+    },
+    "verified": 1000
+  },
+  "l5": {
+    "expected_by_band": {
+      "HOT": 60,
+      "LOW": 500,
+      "NURTURE": 300,
+      "UNSCORED": 9000,
+      "WARM": 140
+    },
+    "hot_all_hot": true,
+    "hot_count": 60,
+    "hot_timing": {
+      "mean_ms": 13.929,
+      "ops": 20,
+      "ops_per_sec": 71.8,
+      "p95_ms": 15.907,
+      "seconds": 0.2786
+    },
+    "summary_by_band": {
+      "HOT": 60,
+      "LOW": 500,
+      "NURTURE": 300,
+      "UNSCORED": 9000,
+      "WARM": 140
+    },
+    "summary_stage_sum": 10000,
+    "summary_timing": {
+      "mean_ms": 31.927,
+      "ops": 20,
+      "ops_per_sec": 31.3,
+      "p95_ms": 36.484,
+      "seconds": 0.6385
+    },
+    "summary_total": 10000
+  },
+  "l6": {
+    "distinct_created": 500,
+    "distinct_ok": 500,
+    "distinct_timing": {
+      "mean_ms": 0.3,
+      "ops": 500,
+      "ops_per_sec": 3329.4,
+      "p95_ms": 0.374,
+      "seconds": 0.1502
+    },
+    "events_after_same_key": 1,
+    "events_final": 501,
+    "same_appointment_ids": 1,
+    "same_created": 1,
+    "same_ok": 500,
+    "same_timing": {
+      "mean_ms": 0.182,
+      "ops": 500,
+      "ops_per_sec": 5509.6,
+      "p95_ms": 0.218,
+      "seconds": 0.0908
+    }
+  },
+  "l7": {
+    "capture_created": 800,
+    "capture_deduped_or_failed": 0,
+    "expected_rows": 1300,
+    "final_rows": 1300,
+    "finding": null,
+    "ok": 2000,
+    "ops_per_sec": 1820.2,
+    "p95_ms": 6.104,
+    "total_calls": 2000,
+    "unique_created_ids": 800,
+    "wall_seconds": 1.0988
+  }
+}

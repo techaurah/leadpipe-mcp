@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "leadpipe-mcp"
+version = "0.1.0"
+description = "An MCP server that gives AI assistants a safe lead pipeline (dedup, scoring, stages, booking) over a Google Sheet, for small businesses with no CRM."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "TechAurah" }]
+keywords = [
+  "mcp",
+  "model-context-protocol",
+  "lead-management",
+  "crm",
+  "google-sheets",
+  "ai-agents",
+  "sales-pipeline",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business",
+]
+dependencies = [
+  "mcp>=1.2,<2",
+  "pydantic>=2,<3",
+]
+
+[project.optional-dependencies]
+google = [
+  "google-api-python-client>=2",
+  "google-auth>=2",
+]
+dev = [
+  "pytest>=8",
+  "pytest-benchmark>=5",
+  "ruff>=0.6",
+  "mypy>=1.11",
+]
+
+[project.scripts]
+leadpipe = "leadpipe.server:main"
+
+[project.urls]
+Homepage = "https://techaurah.com"
+Repository = "https://github.com/techaurah/leadpipe-mcp"
+Issues = "https://github.com/techaurah/leadpipe-mcp/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/leadpipe"]
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/leadpipe"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "src"
+ignore_missing_imports = true
+warn_unused_ignores = false
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]

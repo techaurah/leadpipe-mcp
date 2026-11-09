@@ -29,6 +29,8 @@ already own. An AI assistant captures, deduplicates, scores and books
 leads through eight guardrailed tools, with approval-safe writes. It is
 not a CRM and sends nothing to anyone.
 
+Note: this is the open source, Google Sheets based LeadPipe MCP by TechAura. It is not affiliated with leadpipe.com or the npm leadpipe-mcp-server package.
+
 <p align="center">
   <a href="docs/client-config.md">Client config</a> ·
   <a href="docs/schema.md">Schema</a> ·
